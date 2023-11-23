@@ -32,6 +32,9 @@ body {
 .sec-header #burger {
     background: none;
 }
+.sec-header nav:hover #burger {
+	background: rgba(0, 0, 0, 0.1);
+}
 /* ******************** *//* Home logo */
 
 h1, h2 {
@@ -127,7 +130,7 @@ nav li {
 }
 
 nav a {
-    background: rgba(0, 0, 0, 0.5);
+    background: #505050;
     display: inline-block;
     min-width: max-content; /* to avoid line breaks */
     padding: 2px 20px;
