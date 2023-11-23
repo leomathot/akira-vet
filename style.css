@@ -11,8 +11,8 @@ body {
 
 /* ******************** *//* Home header */
 .home-header {
-    background-image: url('images/german-shepherd-mountain.jpg');
-    background-position: center;
+    background-image: url('images/german-shepherd-mountain-vert.jpg');
+    background-position: left;
     background-size: cover;
     padding: 1vh 0;
     overflow: hidden;
@@ -185,7 +185,7 @@ footer a {
 
 /* ******************** *//* Media queries */
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 700px) {
     body {
         font-size: 1.1em;
     }
@@ -196,20 +196,21 @@ footer a {
                 rgba(0, 60, 100, 0.3) 40px,
                 transparent 80px
             ),
-            url('images/german-shepherd-mountain.jpg');
+            url('images/german-shepherd-mountain-horiz-mid.jpg');
+        background-position: left;
     }
     .logo-cont-home {
-        border: 1.5vh solid rgba(0, 208, 255, 0.5);
-        height: 60vh;
-        margin: 19vh auto;
-        width: 60vh;
+        border: 1.2vh solid rgba(0, 208, 255, 0.5);
+        height: 48vh;
+        margin: 25vh auto;
+        width: 48vh;
     }
     .logo-cont-home h1 {
-        border-bottom: 1.5vh solid #fff;
-        font-size: 18vh
+        border-bottom: 1.2vh solid #fff;
+        font-size: 15vh
     }
     .logo-cont-home p {
-        font-size: 6vh;
+        font-size: 5vh;
     }
     .sec-header {
         padding-top: 50px;
@@ -247,6 +248,29 @@ footer a {
 @media screen and (min-width: 1000px) {
     body {
         font-size: 1.15em;
+    }
+    .home-header {
+        background-image: 
+            linear-gradient(
+                rgba(0, 60, 100, 0.4) 10px,
+                rgba(0, 60, 100, 0.3) 40px,
+                transparent 80px
+            ),
+            url('images/german-shepherd-mountain-horiz-large.jpg');
+        background-position: center;
+    }
+    .logo-cont-home {
+        border: 1vh solid rgba(0, 208, 255, 0.5);
+        height: 35vh;
+        margin: 12vh auto 6vh auto;
+        width: 35vh;
+    }
+    .logo-cont-home h1 {
+        border-bottom: 1vh solid #fff;
+        font-size: 12vh
+    }
+    .logo-cont-home p {
+        font-size: 4vh;
     }
 }
 
