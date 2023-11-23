@@ -243,20 +243,20 @@ footer a {
     }
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 1000px) {
     body {
-        font-size: 1.2em;
+        font-size: 1.15em;
     }
 }
 
 @media screen and (min-width: 1400px) {
     body {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 }
 
 @media screen and (min-width: 1900px) {
     body {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 }
