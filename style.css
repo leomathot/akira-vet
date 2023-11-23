@@ -14,7 +14,7 @@ body {
     background-image: url('images/german-shepherd-mountain.jpg');
     background-position: center;
     background-size: cover;
-    padding: 30vh 0;
+    padding: 1vh 0;
     overflow: hidden;
 }
 /* ******************** */
@@ -49,7 +49,7 @@ h1, h2 {
     border: 1vh solid rgba(0, 208, 255, 0.5);
     color: #fff;
     height: 40vh;
-    margin: auto;
+    margin: 29vh auto;
     max-height: 100vw;
     max-width: 100vw;
     width: 40vh;
@@ -85,7 +85,7 @@ h1 {
 
 /* ******************** *//* Nav */
 nav {
-    display: flex;
+    display: inline-block;
     position: absolute;
     right: 10px;
     top: 10px;
@@ -197,11 +197,11 @@ footer a {
                 transparent 80px
             ),
             url('images/german-shepherd-mountain.jpg');
-            padding: 20vh 0;
     }
     .logo-cont-home {
         border: 1.5vh solid rgba(0, 208, 255, 0.5);
         height: 60vh;
+        margin: 19vh auto;
         width: 60vh;
     }
     .logo-cont-home h1 {
@@ -226,8 +226,8 @@ footer a {
         display: none;
     }
     nav {
-        left: auto;
-        right: auto;
+        right: 0;
+        width: 100%;
     }
     nav ul {
 		background: transparent;
@@ -237,6 +237,7 @@ footer a {
         position: relative;
         right: 0;
         top: 0;
+        width: fit-content;
     }
     nav li {
 		display: inline-block;
