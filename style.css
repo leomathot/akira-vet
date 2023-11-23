@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #101010;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-header {
+    align-items: center;
+    background-image: url('images/german-shepherd-mountain.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    min-height: 60vh;
+    justify-content: center;
+    padding: 10vh 0;
+}
+
+.sec-header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.sec-header #burger {
+    background: none;
+}
+
+h1, h2 {
+    font-family: 'Lobster Two', sans-serif;
+}
+
+/* //////////////////// */
+/* main logo */
+.logo-cont {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1vh solid rgba(0, 208, 255, 0.5);
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: center;
+    /* needed to keep the width in case it is wider than the screen */
+    min-width: 40vh; 
+    text-align: center;
+    width: 40vh;
+}
+
+h1 {
+    border-bottom: 1vh solid #fff;
+    font-size: 12vh;
+}
+
+.logo-cont p {
+    font-size: 4vh;
+    font-weight: 600;
+}
+/* //////////////////// */
+
+/* //////////////////// */
+/* small logo */
+.logo-small {
+    background: #006080;
+    border: 3px solid #fff;
+    height: 90px;
+    justify-content: center;
+    /* needed to keep the width (???) */
+    min-width: 0;
+    position: relative;
+    text-align: center;
+    top: 15px;
+    width: 90px;
+}
+
+.logo-small h1 {
+    border-bottom: 3px solid #fff;
+    font-size: 30px;
+}
+
+.logo-small p {
+    font-size: 16px;
+}
+/* //////////////////// */
+
+nav {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#burger {
+	background: rgba(0, 0, 0, 0.1);
+    font-size: 1.5em;
+    padding: 1px 6px;
+}
+
+nav ul {
+	background: rgba(0, 0, 0, 0.1);
+	display: none;
+	list-style-type: none;
+	position: absolute;
+	right: 0;
+    padding: 10px 3px;
+	top: 100%;text-align: left;
+}
+
+nav:hover ul {
+    display: block;
+}
+
+nav li {
+    margin: 3px;
+}
+
+nav a {
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    min-width: max-content; /* to avoid line breaks */
+    padding: 2px 20px;
+    width: 100%; /* to make them take the full width (clickable) */
+}
+
+nav ul a:hover {
+    background: #006080;
+}
+
+.contact-intro {
+    background-color: #00d0ff;
+    height: 200px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    margin: 0 auto 10px auto;
+    max-width: 800px;
+    width: 90%;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+section {
+    padding: 45px 0;
+}
+
+.blue-section {
+    background: linear-gradient(
+        135deg,    
+        #006080,
+        #00d0ff);
+    color: #fff;
+}
+
+.gray-section {
+    background: #fcfcfc;
+    color: #404040;
+}
+
+.gray-section h2 {
+    color: #006080;
+}
+
+footer {
+    background: #303030;
+    color: #ddd;
+    padding: 50px 8%;
+}
+
+footer a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 760px) {
+    .home-header {
+        background-image: 
+            linear-gradient(
+                rgba(0, 60, 100, 0.3) 5%,
+                transparent 20%
+            ),
+            url('images/german-shepherd-mountain.jpg');
+        padding-top: 15vh;
+    }
+    .sec-header {
+        padding-top: 50px;
+    }
+    .sec-header a {
+        background: none;
+    }
+    #burger {
+        display: none;
+    }
+
+    nav {
+        left: auto;
+        right: auto;
+    }
+    nav ul {
+		background: transparent;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    nav li {
+		display: inline-block;
+    }
+    nav ul a {
+        background: rgba(0, 0, 0, 0.2);
+    }
+}
