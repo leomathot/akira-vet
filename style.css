@@ -9,6 +9,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* ******************** *//* Home header */
 .home-header {
     align-items: center;
     background-image: url('images/german-shepherd-mountain.jpg');
@@ -19,22 +20,25 @@ body {
     justify-content: center;
     padding: 10vh 0;
 }
+/* ******************** */
 
+/* ******************** *//* Secundary header */
 .sec-header {
     align-items: center;
     display: flex;
     justify-content: center;
     padding-top: 10px;
 }
-
 .sec-header #burger {
     background: none;
 }
+/* ******************** *//* Home logo */
 
 h1, h2 {
     font-family: 'Lobster Two', sans-serif;
 }
 
+/* ******************** *//* Logos */
 .logo-cont-home, .logo-cont-small {
     align-items: center;
     border-radius: 50%;
@@ -43,6 +47,7 @@ h1, h2 {
     justify-content: center;
     text-align: center;
 }
+/* ******************** */
 
 /* ******************** *//* Home logo */
 .logo-cont-home {
@@ -186,8 +191,9 @@ footer a {
     .home-header {
         background-image: 
             linear-gradient(
-                rgba(0, 60, 100, 0.3) 5%,
-                transparent 20%
+                rgba(0, 60, 100, 0.4) 10px,
+                rgba(0, 60, 100, 0.3) 40px,
+                transparent 80px
             ),
             url('images/german-shepherd-mountain.jpg');
         padding-top: 15vh;
@@ -195,7 +201,7 @@ footer a {
     .sec-header {
         padding-top: 50px;
     }
-    .sec-header a {
+    .home-header a, .sec-header a {
         background: none;
     }
     #burger {
@@ -217,8 +223,5 @@ footer a {
     }
     nav li {
 		display: inline-block;
-    }
-    nav ul a {
-        background: rgba(0, 0, 0, 0.2);
     }
 }
