@@ -131,7 +131,6 @@ nav a {
 
 nav ul a:hover {
     background: #006080;
-    text-shadow: none;
 }
 /* ******************** */
 
@@ -220,7 +219,7 @@ footer a {
     }
     .home-header a {
         text-shadow: 
-            -1px 1px #101010, 
+            -1px 1px #101010,
             -2px 1px #101010;
     }
     #burger {
@@ -242,6 +241,9 @@ footer a {
     }
     nav li {
 		display: inline-block;
+    }
+    nav ul a:hover {
+        background: rgba(0, 0, 0, 0.2);
     }
 }
 
