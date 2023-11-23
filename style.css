@@ -186,6 +186,9 @@ footer a {
 /* ******************** *//* Media queries */
 
 @media screen and (min-width: 760px) {
+    body {
+        font-size: 1.1em;
+    }
     .home-header {
         background-image: 
             linear-gradient(
@@ -194,7 +197,7 @@ footer a {
                 transparent 80px
             ),
             url('images/german-shepherd-mountain.jpg');
-            padding: 20vh;
+            padding: 20vh 0;
     }
     .logo-cont-home {
         border: 1.5vh solid rgba(0, 208, 255, 0.5);
@@ -222,7 +225,6 @@ footer a {
     #burger {
         display: none;
     }
-
     nav {
         left: auto;
         right: auto;
@@ -238,12 +240,6 @@ footer a {
     }
     nav li {
 		display: inline-block;
-    }
-}
-
-@media screen and (min-width: 760px) {
-    body {
-        font-size: 1.1em;
     }
 }
 
