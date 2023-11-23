@@ -139,6 +139,7 @@ nav a {
 
 nav ul a:hover {
     background: #006080;
+    text-shadow: none;
 }
 /* ******************** */
 
@@ -190,6 +191,8 @@ footer a {
     text-decoration: none;
 }
 
+/* ******************** *//* Media queries */
+
 @media screen and (min-width: 760px) {
     .home-header {
         background-image: 
@@ -206,6 +209,11 @@ footer a {
     }
     .home-header a, .sec-header a {
         background: none;
+    }
+    .home-header a {
+        text-shadow: 
+            -1px 1px #101010, 
+            -2px 1px #101010;
     }
     #burger {
         display: none;
@@ -226,5 +234,29 @@ footer a {
     }
     nav li {
 		display: inline-block;
+    }
+}
+
+@media screen and (min-width: 760px) {
+    body {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    body {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    body {
+        font-size: 1.4em;
     }
 }
