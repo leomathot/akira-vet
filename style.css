@@ -197,7 +197,7 @@ footer a {
                 transparent 80px
             ),
             url('images/german-shepherd-mountain-horiz-mid.jpg');
-        background-position: left;
+        background-position: top;
     }
     .logo-cont-home {
         border: 1.2vh solid rgba(0, 208, 255, 0.5);
@@ -257,20 +257,7 @@ footer a {
                 transparent 80px
             ),
             url('images/german-shepherd-mountain-horiz-large.jpg');
-        background-position: center;
-    }
-    .logo-cont-home {
-        border: 1vh solid rgba(0, 208, 255, 0.5);
-        height: 35vh;
-        margin: 12vh auto 6vh auto;
-        width: 35vh;
-    }
-    .logo-cont-home h1 {
-        border-bottom: 1vh solid #fff;
-        font-size: 12vh
-    }
-    .logo-cont-home p {
-        font-size: 4vh;
+            background-position: top;
     }
 }
 
