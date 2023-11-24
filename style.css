@@ -20,6 +20,9 @@ body {
 /* ******************** */
 
 /* ******************** *//* Secundary header */
+.sec-header {
+    padding-top: 10px;
+}
 .sec-header #burger {
     background: none;
 }
@@ -90,18 +93,15 @@ nav {
     right: 10px;
     top: 10px;
 }
-
 nav a {
 	color: #fff;
 	text-decoration: none;
 }
-
 #burger {
 	background: rgba(0, 0, 0, 0.1);
     font-size: 1.5em;
     padding: 1px 6px;
 }
-
 nav ul {
 	background: rgba(0, 0, 0, 0.1);
 	display: none;
@@ -112,15 +112,12 @@ nav ul {
 	top: 100%;
     text-align: left;
 }
-
 nav:hover ul {
     display: block;
 }
-
 nav li {
     margin: 3px;
 }
-
 nav a {
     background: #505050;
     display: inline-block;
@@ -128,7 +125,6 @@ nav a {
     padding: 2px 20px;
     width: 100%; /* to make them take the full width (clickable) */
 }
-
 nav ul a:hover {
     background: #006080;
 }
@@ -151,7 +147,7 @@ p:last-of-type {
 }
 
 section {
-    padding: 45px 0;
+    padding: 55px 0;
 }
 
 .blue-section {
@@ -193,7 +189,8 @@ footer a {
             linear-gradient(
                 rgba(0, 60, 100, 0.4) 10px,
                 rgba(0, 60, 100, 0.3) 40px,
-                transparent 80px
+                rgba(0, 60, 100, 0.1) 80px,
+                transparent 120px
             ),
             url('images/german-shepherd-mountain-horiz-mid.jpg');
         background-position: top;
@@ -256,7 +253,8 @@ footer a {
             linear-gradient(
                 rgba(0, 60, 100, 0.4) 10px,
                 rgba(0, 60, 100, 0.3) 40px,
-                transparent 80px
+                rgba(0, 60, 100, 0.1) 80px,
+                transparent 120px
             ),
             url('images/german-shepherd-mountain-horiz-large.jpg');
             background-position: top;
