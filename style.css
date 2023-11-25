@@ -48,8 +48,8 @@ h1, h2 {
 
 /* ******************** *//* Home logo */
 .logo-cont-home {
-    background: rgba(0, 0, 0, 0.3);
-    border: 1vh solid rgba(0, 208, 255, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    border: 1vh solid #00d0ff80;
     color: #fff;
     height: 40vh;
     margin: 29vh auto;
