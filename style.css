@@ -29,7 +29,16 @@ body {
 .sec-header nav:hover #burger {
 	background: rgba(0, 0, 0, 0.1);
 }
-/* ******************** *//* Home logo */
+.logo-a {
+    border-radius: 50%;
+	color: #fff;
+    display: block;
+    margin: 0 auto;position: relative;
+	text-decoration: none;
+    top: 15px;
+    width: fit-content;
+}
+/* ******************** */
 
 h1, h2 {
     font-family: 'Lobster Two', sans-serif;
@@ -72,9 +81,6 @@ h1 {
     background: #006080;
     border: 3px solid #fff;
     height: 90px;
-    margin: 0 auto;
-    position: relative;
-    top: 15px;
     width: 90px;
 }
 .logo-cont-small h1 {
@@ -185,14 +191,7 @@ footer a {
         font-size: 1.1em;
     }
     .home-header {
-        background-image: 
-            linear-gradient(
-                rgba(0, 60, 100, 0.4) 10px,
-                rgba(0, 60, 100, 0.3) 40px,
-                rgba(0, 60, 100, 0.1) 80px,
-                transparent 120px
-            ),
-            url('images/german-shepherd-mountain-horiz-mid.jpg');
+        background-image: url('images/german-shepherd-mountain-horiz-mid.jpg');
         background-position: top;
     }
     .logo-cont-home {
@@ -215,9 +214,7 @@ footer a {
         background: none;
     }
     .home-header a {
-        text-shadow: 
-            -1px 1px #101010,
-            -2px 1px #101010;
+        color: #101010;
     }
     #burger {
         display: none;
@@ -240,7 +237,7 @@ footer a {
 		display: inline-block;
     }
     nav ul a:hover {
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.1);
     }
 }
 
@@ -249,15 +246,7 @@ footer a {
         font-size: 1.15em;
     }
     .home-header {
-        background-image: 
-            linear-gradient(
-                rgba(0, 60, 100, 0.4) 10px,
-                rgba(0, 60, 100, 0.3) 40px,
-                rgba(0, 60, 100, 0.1) 80px,
-                transparent 120px
-            ),
-            url('images/german-shepherd-mountain-horiz-large.jpg');
-            background-position: top;
+        background-image: url('images/german-shepherd-mountain-horiz-large.jpg');
     }
 }
 
