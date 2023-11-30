@@ -136,16 +136,20 @@ nav ul a:hover {
 }
 /* ******************** */
 
+h2, p {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 90%;
+}
+
 h2 {
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
 p {
-    margin: 0 auto 10px auto;
-    max-width: 800px;
-    width: 90%;
+    margin-bottom: 30px;
 }
 
 p:last-of-type {
@@ -153,7 +157,7 @@ p:last-of-type {
 }
 
 section {
-    padding: 55px 0;
+    padding: 70px 0;
 }
 
 .blue-section {
