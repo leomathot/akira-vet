@@ -4,6 +4,13 @@
     padding: 0;
 }
 
+:root {
+    --white: #fcfcfc;
+    --dark-blue: #006080;
+    --mid-blue: #00a8d0;
+    --light-blue: #00d0ff;
+}
+
 body {
     background: #101010;
     font-family: 'Poppins', sans-serif;
@@ -31,7 +38,7 @@ body {
 }
 .logo-a {
     border-radius: 50%;
-	color: #fff;
+	color: var(--white);
     display: block;
     margin: 0 auto;position: relative;
 	text-decoration: none;
@@ -59,7 +66,7 @@ h1, h2 {
 .logo-cont-home {
     background: rgba(0, 0, 0, 0.5);
     border: 1vh solid #00d0ff80;
-    color: #fff;
+    color: var(--white);
     height: 40vh;
     margin: 29vh auto;
     max-height: 100vw;
@@ -67,7 +74,7 @@ h1, h2 {
     width: 40vh;
 }
 h1 {
-    border-bottom: 1vh solid #fff;
+    border-bottom: 1vh solid var(--white);
     font-size: 12vh;
 }
 .logo-cont-home p {
@@ -78,13 +85,13 @@ h1 {
 
 /* ******************** *//* Small logo */
 .logo-cont-small {
-    background: #006080;
-    border: 3px solid #fff;
+    background: var(--dark-blue);
+    border: 3px solid var(--white);
     height: 90px;
     width: 90px;
 }
 .logo-cont-small h1 {
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid var(--white);
     font-size: 30px;
 }
 .logo-cont-small p {
@@ -100,7 +107,7 @@ nav {
     top: 10px;
 }
 nav a {
-	color: #fff;
+	color: var(--white);
 	text-decoration: none;
 }
 #burger {
@@ -132,7 +139,7 @@ nav a {
     width: 100%; /* to make them take the full width (clickable) */
 }
 nav ul a:hover {
-    background: #006080;
+    background: var(--dark-blue);
 }
 /* ******************** */
 
@@ -163,8 +170,9 @@ section {
 .blue-section {
     background: linear-gradient(
         135deg,    
-        #006080,
-        #00d0ff);
+        var(--dark-blue),
+        var(--mid-blue) 80%,
+        var(--light-blue));
     color: #fff;
 }
 
@@ -174,7 +182,7 @@ section {
 }
 
 .gray-section h2 {
-    color: #006080;
+    color: var(--dark-blue);
 }
 
 footer {
