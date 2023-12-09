@@ -255,14 +255,17 @@ button:hover {
 }
 
 /* ////////// Forms ////////// */
-#contact-form form {
+#contact-form {
     background: rgba(0, 0, 0, 0.1);
-    padding: 15px;
 }
 
-#appointment-form form {
+#appointment-form {
     background: var(--gradient-blue);
-    padding: 15px;
+    color: var(--white);
+}
+
+#contact-form, #appointment-form {
+    padding: 25px 15px 15px 15px;
 }
 
 fieldset {
