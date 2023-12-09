@@ -183,7 +183,7 @@ section {
 .width-cont {
     margin: 0 auto;
     max-width: 900px;
-    width: 90%;
+    width: 95%;
 }
 
 .blue-bg {
@@ -228,7 +228,7 @@ button:hover {
 
 .intro-form-grid {
     display: grid;
-    gap: 30px;
+    gap: 50px;
 }
 
 .intro-form-grid > div:first-of-type {
@@ -272,8 +272,8 @@ fieldset {
     background: var(--white);
     color: var(--dark-blue);
     border: none;
-    margin: 40px 0;
-    padding: 10px;
+    margin: 20px 0 40px 0;
+    padding: 10px 10px 15px 10px;
 }
 
 legend {
