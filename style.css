@@ -13,6 +13,11 @@
     --dark-blue: #006080;
     --mid-blue: #2090b0;
     --light-blue: #00d0ff;
+
+    --gradient-blue: linear-gradient(
+        135deg,    
+        var(--dark-blue),
+        var(--light-blue));
 }
 
 body {
@@ -44,7 +49,8 @@ body {
     border-radius: 50%;
 	color: var(--white);
     display: block;
-    margin: 0 auto;position: relative;
+    margin: 0 auto;
+    position: relative;
 	text-decoration: none;
     top: 15px;
     width: fit-content;
@@ -181,10 +187,7 @@ section {
 }
 
 .blue-bg {
-    background: linear-gradient(
-        135deg,    
-        var(--dark-blue),
-        var(--light-blue));
+    background: var(--gradient-blue);
     color: var(--white);
 }
 
@@ -209,7 +212,7 @@ section {
     row-gap: 15px;
 }
 
-.two-btn button {
+button {
     background: var(--dark-blue);
     border: none;
     color: var(--white);
@@ -219,7 +222,7 @@ section {
     width: 100%;
 }
 
-.two-btn button:hover {
+button:hover {
     background: var(--mid-blue);
 }
 
@@ -229,8 +232,9 @@ section {
 }
 
 .intro-form-grid > div:first-of-type {
+    column-gap: 10px;
     display: grid;
-    gap: 30px;
+    row-gap: 30px;
 }
 
 .intro-form-grid .img-bg {
@@ -254,39 +258,67 @@ section {
 #contact-form form {
     background: rgba(0, 0, 0, 0.1);
     padding: 15px;
+}
+
+#appointment-form form {
+    background: var(--gradient-blue);
+    padding: 15px;
+}
 
 fieldset {
     background: var(--white);
     color: var(--dark-blue);
     border: none;
-    margin-bottom: 30px;
+    margin: 40px 0;
     padding: 10px;
 }
 
 legend {
     background: var(--white);
     font-weight: 600;
-    padding: 5px 10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    padding: 5px 10px 0 10px;
+    position: relative;
+}
+
+.one-two {
+    column-gap: 15px;
+    display: grid;
 }
 
 label {
     display: block;
-    margin-top: 15px;
+    margin: 15px 0 5px 0;
 }
 
 input {
-    background: rgba(0, 0, 0, 0.1);
-    border: none;
+    background: transparent;
+    border: 1px solid var(--mid-blue);
+    border-radius: 0;
     display: block;
-    padding: 3px;
+    padding: 5px;
     width: 100%;
 }
 
 textarea {
+    background: transparent;
+    border: 1px solid var(--mid-blue);
+    font-family: var(--font-main);
+    padding: 10px;
     resize: vertical;
     width: 100%;
 }
 
+form button {
+    width: 50%;
+}
+
+form button:hover {
+    background: var(--black);
+}
+
+/* ////////// Footer ////////// */
 footer {
     background: #303030;
     color: #ddd;
@@ -357,6 +389,19 @@ footer a {
     }
     .intro-form-grid > div:first-of-type {
         grid-template-columns: 2fr 3fr;
+    }
+    .intro-form-grid > div:first-of-type > div:nth-child(1) {
+        background: transparent;
+    }
+    .intro-form-grid > div:first-of-type > div:nth-child(2) {
+        background: linear-gradient(
+            transparent,
+            rgba(0,0,0,0.1)
+        );
+        padding: 0 15px 5px 15px;
+    }
+    .one-two {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
