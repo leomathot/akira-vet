@@ -15,12 +15,12 @@
 </head>
 <body>
 
-    <header class="sec-header blue-section">
+    <header class="sec-header blue-bg">
 
         <a class="logo-a" href="index.html">
             <div class="logo-cont-small">
-                <h1>Akira</h1>
-                <p>Vet.</p>
+                <span class="logo-akira">Akira</span>
+                <span class="logo-vet">Vet.</span>
             </div>
         </a>
 
@@ -37,16 +37,101 @@
     </header>
     <main>
 
-        <section class="gray-section">
-            <h2>Locura total</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate laudantium veniam vero, illum dolorem, nemo quas beatae maxime itaque nihil asperiores laborum alias obcaecati quam cumque doloremque nisi odit?</p>
+        <!-- First Section in Contact Us Page -->
+        <section class="white-bg">
+            <div class="width-cont">
+                
+                <h1>Contact Us or Book an Appointment</h1>
+
+                <p>If you have any questions for us about our services or would like to make a suggestion, please fill out our contact form below and we will respond as soon as possible.</p>
+
+                <p>If you are already a client and know that we can help your pet, then you can book an appointment by filling out the appointment form.</p>
+
+                <!-- Buttons -->
+                <div class="two-btn">
+
+                    <a href="#contact-form">
+                        <button>Contact Form</button>
+                    </a>
+                    <a href="#appointment-form">
+                        <button>Book an Appointment</button>
+                    </a>
+
+                </div>
+
+            </div>
         </section>
 
-        <section class="blue-section">
-            <h2>Locura total</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate laudantium veniam vero, illum dolorem, nemo quas beatae maxime itaque nihil asperiores laborum alias obcaecati quam cumque doloremque nisi odit?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate laudantium veniam vero, illum dolorem, nemo quas beatae maxime itaque nihil asperiores laborum alias obcaecati quam cumque doloremque nisi odit?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate laudantium veniam vero, illum dolorem, nemo quas beatae maxime itaque nihil asperiores laborum alias obcaecati quam cumque doloremque nisi odit?</p>
+        <!-- Contact Form Section -->
+        <section class="blue-bg">
+            <div class="width-cont">
+
+                <h2>We Know How to Do It</h2>
+                <div class="intro-form-grid">
+                    <div>
+                        <div class="img-bg">
+                            <img src="images/dog-akira-wet.jpg" alt="" width="350" height="350">
+                        </div>
+                        <div>
+                            <h3>Contact Us</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate laudantium veniam vero, illum dolorem, nemo quas beatae maxime itaque nihil asperiores laborum alias obcaecati quam cumque doloremque nisi odit?</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div id="contact-form">
+                        <H3>Contact Form</H3>
+                        <form action="">
+                            <fieldset>
+                                <legend>Personal Information</legend>
+
+                                <label for="cont-f-name">*First Name</label>
+                                <input type="text" id="cont-f-name" required aria-required="true">
+                                
+                                <label for="cont-l-name">*Last Name</label>
+                                <input type="text" id="cont-l-name" required aria-required="true">
+                                
+                                <label for="cont-email">*Email</label>
+                                <input type="text" id="cont-email" required aria-required="true">
+                                
+                                <label for="cont-phone">Phone</label>
+                                <input type="text" id="cont-phone">
+                            </fieldset>
+
+                            <fieldset>
+
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Appointment Section -->
+        <section class="white-bg">
+            <div class="width-cont">
+
+                <h2>We also Love Them</h2>
+                <div class="intro-form-grid">
+                    <div>
+                        <div class="img-bg">
+                            <img src="images/dog-sara.jpg" alt="" width="350" height="350">
+                        </div>
+                        <div>
+                            <h3>Book an Appointment</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptate laudantium veniam vero, illum dolorem, nemo quas beatae maxime itaque nihil asperiores laborum alias obcaecati quam cumque doloremque nisi odit?</p>
+                        </div>
+                    </div>
+
+                    <!-- Appointment Form -->
+                    <div id="appointment-form">
+                        <H3>Appointment Form</H3>
+                        <form action="">
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
