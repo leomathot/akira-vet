@@ -20,7 +20,7 @@ body {
     font-family: var(--font-main);
 }
 
-/* ******************** *//* Home header */
+/* ////////// Home header ////////// */
 .home-header {
     background-image: url('images/german-shepherd-mountain-vert.jpg');
     background-position: left;
@@ -28,9 +28,9 @@ body {
     padding: 1vh 0;
     overflow: hidden;
 }
-/* ******************** */
+/* ////////// ////////// */
 
-/* ******************** *//* Secundary header */
+/* ////////// Secundary header ////////// */
 .sec-header {
     padding-top: 10px;
 }
@@ -49,13 +49,13 @@ body {
     top: 15px;
     width: fit-content;
 }
-/* ******************** */
+/* ////////// ////////// */
 
 h1, h2 {
     font-family: var(--font-alt-01);
 }
 
-/* ******************** *//* Logos */
+/* ////////// Logos ////////// */
 .logo-cont-home, .logo-cont-small {
     align-items: center;
     border-radius: 50%;
@@ -68,9 +68,9 @@ h1, h2 {
 .logo-akira {
     font-family: var(--font-alt-01);
 }
-/* ******************** */
+/* ////////// ////////// */
 
-/* ******************** *//* Home logo */
+/* ////////// Home logo ////////// */
 .logo-cont-home {
     background: rgba(0, 0, 0, 0.5);
     border: 1vh solid #00d0ff80;
@@ -90,9 +90,9 @@ h1, h2 {
     font-size: 6vh;
     font-weight: 600;
 }
-/* ******************** */
+/* ////////// ////////// */
 
-/* ******************** *//* Small logo */
+/* ////////// Small logo ////////// */
 .logo-cont-small {
     background: var(--dark-blue);
     border: 3px solid var(--white);
@@ -106,9 +106,12 @@ h1, h2 {
 .logo-cont-small .logo-vet {
     font-size: 13.5px;
 }
-/* ******************** */
+.logo-a:hover .logo-cont-small {
+    background: var(--mid-blue);
+}
+/* ////////// ////////// */
 
-/* ******************** *//* Nav */
+/* ////////// Nav ////////// */
 nav {
     display: inline-block;
     position: absolute;
@@ -148,9 +151,9 @@ nav a {
     width: 100%; /* to make them take the full width (clickable) */
 }
 nav ul a:hover {
-    background: var(--dark-blue);
+    background: var(--mid-blue);
 }
-/* ******************** */
+/* ////////// ////////// */
 
 h1, h2 {
     border-bottom: 2px solid;
@@ -247,6 +250,43 @@ section {
     margin-bottom: 20px;
 }
 
+/* ////////// Forms ////////// */
+#contact-form form {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 15px;
+
+fieldset {
+    background: var(--white);
+    color: var(--dark-blue);
+    border: none;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+legend {
+    background: var(--white);
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input {
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    display: block;
+    padding: 3px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    width: 100%;
+}
+
 footer {
     background: #303030;
     color: #ddd;
@@ -258,7 +298,7 @@ footer a {
     text-decoration: none;
 }
 
-/* ******************** *//* Media queries */
+/* ////////// Media queries ////////// */
 
 @media screen and (min-width: 700px) {
     body {
