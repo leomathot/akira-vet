@@ -10,10 +10,13 @@
 
     --white: #fcfcfc;
     --black: #202020;
+    --lighter-blue: #d8f4f8;
     --light-blue: #00d0ff;
     --mid-blue: #2090b0;
     --dark-blue: #006080;
     --darker-blue: #083c4c;
+
+    --black-a10: rgba(0,0,0,0.1);
 
     --gradient-dark-blue-light-blue: linear-gradient(
         135deg,    
@@ -21,9 +24,8 @@
         var(--light-blue));
     --gradient-transp-black-a10: linear-gradient(
         transparent,
-        rgba(0,0,0,0.1));
-    --gradient-black-a10: linear-gradient(
-        rgba(0,0,0,.01));
+        rgba(0,0,0,0.1)
+        );
 }
 
 html {
@@ -53,7 +55,7 @@ body {
     background: none;
 }
 .sec-header nav:hover #burger {
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(0,0,0,0.1);
 }
 /* ////////// ////////// */
 
@@ -78,7 +80,7 @@ h1, h2 {
 
 /* ////////// Home logo ////////// */
 .logo-cont-home {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0,,00.);
     border: 1vh solid #00d0ff80;
     color: var(--white);
     height: 40vh;
@@ -139,12 +141,12 @@ nav a {
 	text-decoration: none;
 }
 #burger {
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(0,0,0,0.1);
     font-size: 1.5em;
     padding: 1px 6px;
 }
 nav ul {
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(0,0,0,0.1);
 	display: none;
 	list-style-type: none;
 	position: absolute;
@@ -214,12 +216,16 @@ section {
     color: var(--dark-blue);
 }
 
-.two-btn {
-    column-gap: 20px;
+.two-p-two-btn {
+    column-gap: 30px;
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 45px;
+    margin-top: 40px;
     row-gap: 15px;
+}
+
+.two-p-two-btn p {
+    margin: 0;
 }
 
 button {
@@ -238,17 +244,18 @@ button:hover {
 
 .intro-form-grid {
     display: grid;
-    gap: 50px;
+    gap: 40px;
 }
 
 .intro-form-grid > div:first-of-type {
-    column-gap: 10px;
+    column-gap: 20px;
     display: grid;
     row-gap: 30px;
 }
 
 .intro-form-grid .img-bg {
-    background: rgba(0, 0, 0, 0.1);
+    background: var(--gradient-transp-black-a10);
+    padding: 0 8px 20px 8px;
     width: 100%;
 }
 
@@ -266,7 +273,7 @@ button:hover {
 
 /* ////////// Forms ////////// */
 #contact-form {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0,0,0,0.1);
 }
 
 #appointment-form {
@@ -275,7 +282,7 @@ button:hover {
 }
 
 #contact-form, #appointment-form {
-    padding: 25px 15px 15px 15px;
+    padding: 25px 15px 20px 15px;
 }
 
 fieldset {
@@ -295,7 +302,7 @@ legend {
     position: relative;
 }
 
-.one-two {
+.form-one-two {
     column-gap: 15px;
     display: grid;
 }
@@ -351,15 +358,12 @@ footer a {
 
 /* ////////// 750px ////////// */
 @media screen and (min-width: 750px) {
-    body {
-        font-size: 1.05em;
-    }
     .home-header {
         background-image: url('images/german-shepherd-mountain-horiz-mid.jpg');
         background-position: top;
     }
     .logo-cont-home {
-        border: 1.25vh solid rgba(0, 208, 255, 0.5);
+        border: 1.25vh solid #00d0ff80;
         height: 50vh;
         margin: 24vh auto;
         width: 50vh;
@@ -400,31 +404,27 @@ footer a {
 		display: inline-block;
     }
     nav ul a:hover {
-        background: rgba(0, 0, 0, 0.1);
+        background: rgba(0,0,0,0.1);
     }
-    .two-btn {
+    .two-p-two-btn {
         grid-template-columns: 1fr 1fr;
     }
     .intro-form-grid > div:first-of-type {
-        grid-template-columns: 2fr 3fr;
-    }
-    .intro-form-grid > div:first-of-type > div:nth-child(1) {
-        background: transparent;
-    }
-    .intro-form-grid > div:first-of-type > div:nth-child(2) {
         background: var(--gradient-transp-black-a10);
-        padding: 0 15px 5px 15px;
+        grid-template-columns: 2fr 3fr;
+        padding: 0 15px 20px 15px;
     }
-    .one-two {
+    .intro-form-grid .img-bg {
+        background: transparent;
+        padding: 0;
+    }
+    .form-one-two {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 /* ////////// 1000px ////////// */
 @media screen and (min-width: 1000px) {
-    body {
-        font-size: 1.1em;
-    }
     .home-header {
         background-image: url('images/german-shepherd-mountain-horiz-large.jpg');
     }
@@ -433,20 +433,39 @@ footer a {
 /* ////////// 1400px ////////// */
 @media screen and (min-width: 1400px) {
     body {
-        font-size: 1.15em;
+        font-size: 1.05em;
     }
 }
 
 /* ////////// 1900px ////////// */
 @media screen and (min-width: 1900px) {
     body {
-        font-size: 1.25em;
+        font-size: 1.15em;
+    }
+    .width-cont {
+        max-width: 1200px;
+    }
+    .intro-form-grid {
+        gap: 25px;
+        grid-template-columns: 1fr 2fr;
+    }
+    .intro-form-grid > div:nth-child(1),
+    .intro-form-grid > div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .intro-form-grid > div:nth-child(1) {
+        background: var(--black-a10);
+        flex-direction: column-reverse;
+        gap: 50px;
+        padding-top: 25px;
     }
 }
 
 /* ////////// 2500px ////////// */
 @media screen and (min-width: 2500px) {
     body {
-        font-size: 1.3em;
+        font-size: 1.25em;
     }
 }
