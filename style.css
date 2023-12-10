@@ -79,7 +79,7 @@ h1, h2 {
 
 /* ////////// Home logo ////////// */
 .logo-cont-home {
-    background: rgba(0,,00.);
+    background: rgba(0,0,0,0.5);
     border: 1vh solid #00d0ff80;
     color: var(--white);
     height: 40vh;
