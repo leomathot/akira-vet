@@ -26,6 +26,10 @@
         rgba(0,0,0,.01));
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #101010;
     font-family: var(--font-main);
