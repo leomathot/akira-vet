@@ -55,16 +55,6 @@ body {
 .sec-header nav:hover #burger {
 	background: rgba(0, 0, 0, 0.1);
 }
-.logo-a {
-    border-radius: 50%;
-	color: var(--white);
-    display: block;
-    margin: 0 auto;
-    position: relative;
-	text-decoration: none;
-    top: 15px;
-    width: fit-content;
-}
 /* ////////// ////////// */
 
 h1, h2 {
@@ -124,6 +114,16 @@ h1, h2 {
 }
 .logo-a:hover .logo-cont-small {
     background: var(--dark-blue);
+}
+.logo-a {
+    border-radius: 50%;
+	color: var(--white);
+    display: block;
+    margin: 0 auto;
+    position: relative;
+	text-decoration: none;
+    top: 15px;
+    width: fit-content;
 }
 /* ////////// ////////// */
 
