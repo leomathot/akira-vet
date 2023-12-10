@@ -10,7 +10,7 @@
 
     --white: #fcfcfc;
     --black: #202020;
-    --lighter-blue: #d8f4f8;
+    --lighter-blue: #ace0e8;
     --light-blue: #00d0ff;
     --mid-blue: #2090b0;
     --dark-blue: #006080;
@@ -412,7 +412,13 @@ footer a {
         grid-template-columns: 2fr 3fr;
     }
     .intro-form-grid .img-bg {
-        padding-bottom: 30px;
+        background: var(--black-a10);
+        padding: 10px 15px 30px 15px;
+    }
+    .intro-form-grid .img-bg img {
+        margin: 0;
+        max-width: 100%;
+        object-fit: cover;
     }
     .form-one-two {
         grid-template-columns: 1fr 1fr;
@@ -454,10 +460,6 @@ footer a {
     .intro-form-grid > div:nth-child(1) {
         flex-direction: column-reverse;
         padding-top: 25px;
-    }
-    .intro-form-grid .img-bg {
-        background: var(--black-a10);
-        padding-top: 20px;
     }
 }
 
