@@ -172,6 +172,7 @@ nav ul a:hover {
 }
 /* ////////// ////////// */
 
+/* ////////// Shered ////////// */
 h1, h2 {
     border-bottom: 2px solid;
     font-size: 2em;
@@ -217,6 +218,29 @@ section {
 
 .white-bg h1, .white-bg h2 {
     color: var(--dark-blue);
+}
+
+.home-links a {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.home-links button {
+    background: var(--black);
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px var(--black-a10);
+    font-weight: 600;
+    height: 180px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 180px;
+}
+
+.home-links button:hover {
+    background: var(--darker-blue);
+    box-shadow: 0 0 0 4px var(--white);
 }
 
 .two-p-two-btn {
