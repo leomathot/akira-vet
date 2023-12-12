@@ -253,7 +253,7 @@ button:hover {
 .intro-form-grid > div:first-of-type {
     column-gap: 20px;
     display: grid;
-    row-gap: 30px;
+    row-gap: 40px;
 }
 
 .intro-form-grid .img-bg {
