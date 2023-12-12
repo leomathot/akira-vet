@@ -224,11 +224,7 @@ section {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 40px;
-    row-gap: 15px;
-}
-
-.two-p-two-btn p {
-    margin: 0;
+    row-gap: 30px;
 }
 
 button {
@@ -317,7 +313,7 @@ label {
     margin: 15px 0 5px 0;
 }
 
-input {
+input, select {
     background: transparent;
     border: 1px solid var(--mid-blue);
     border-radius: 0;

@@ -45,9 +45,14 @@
 
                 <!-- Paragraphs -->
                 <div class="two-p-two-btn">
-                    <p>If you have any questions for us about our services or would like to make a suggestion, please fill out our contact form below and we will respond as soon as possible.</p>
+                    <div>
+                        <p>If you have any questions for us about our services or would like to make a suggestion, please fill out our <b>Contact Form</b> below and we will respond as soon as possible.</p>
+                    </div>
 
-                    <p>If you are already a client and know that we can help your pet, then you can book an appointment by filling out the appointment form.</p>
+                    <div>
+                        <p>If you are already a client or have spoken to us about the services we can offer, and know that we can help your pet, then you can book an appointment by completing the <b>Appointment Form.</b></p>
+                        <p>If you are unsure, please contact us first for assistance.</p>
+                </div>
                 </div>
 
                 <!-- Buttons -->
@@ -69,7 +74,7 @@
         <section class="blue-bg">
             <div class="width-cont">
 
-                <h2>We Know How to Do It</h2>
+                <h2>Contact Akira Vet</h2>
                 <div class="intro-form-grid">
                     <div>
                         <div class="img-bg">
@@ -120,23 +125,18 @@
 
                                 <div class="form-one-two">
                                     <div>
-                                    <label for="cont-f-name">*First Name</label>
-                                    <input type="text" id="cont-f-name" required aria-required="true">
+                                    <label for="cont-species">*Species</label>
+                                    <select name="cont-species" id="cont-f-species" required aria-required="true">
+                                        <option value=""></option>
+                                        <option value="canine">Dog</option>
+                                        <option value="feline">Cat</option>
+                                        <option value="other">Other</option>
+                                    </select>
                                     </div>
                                     
                                     <div>
-                                    <label for="cont-l-name">*Last Name</label>
-                                    <input type="text" id="cont-l-name" required aria-required="true">
-                                    </div>
-                                    
-                                    <div>
-                                    <label for="cont-email">*Email</label>
-                                    <input type="text" id="cont-email" required aria-required="true">
-                                    </div>
-                                    
-                                    <div>
-                                    <label for="cont-phone">Phone</label>
-                                    <input type="text" id="cont-phone">
+                                    <label for="cont-breed">Breed</label>
+                                    <input type="text" id="cont-breed">
                                     </div>
 
                                 </div>
@@ -145,8 +145,8 @@
                             <fieldset>
                                 <legend>Message</legend>
 
-                                <label for="cont-message">How Can We Help?</label>
-                                <textarea name="cont-message" id="cont-message" rows="6"></textarea>
+                                <label for="cont-message">*How Can We Help?</label>
+                                <textarea name="cont-message" id="cont-message" rows="6" required aria-required="true"></textarea>
 
                             </fieldset>
 
@@ -162,7 +162,7 @@
         <section class="white-bg">
             <div class="width-cont">
 
-                <h2>We Will Take Care</h2>
+                <h2>Visit Akira Vet</h2>
                 <div class="intro-form-grid">
                     <div>
                         <div class="img-bg">
@@ -171,7 +171,7 @@
                         <div>
                             <h3>Book an Appointment</h3>
                             <p>The best way to book an appointment is by filling out the <b>Appointment Form</b> in this section.</p>
-                            <p>If you prefer to do it by phone, you can call us at <b>(012) 345 6789</b>.</p>
+                            <p>If you prefer to do it by phone, you can call us at <b>(012) 345-6789</b>.</p>
                         </div>
                     </div>
 
@@ -186,33 +186,79 @@
 
                                 <div class="form-one-two">
                                     <div>
-                                    <label for="cont-f-name">*First Name</label>
-                                    <input type="text" id="cont-f-name" required aria-required="true">
+                                    <label for="appo-f-name">*First Name</label>
+                                    <input type="text" id="appo-f-name" required aria-required="true">
                                     </div>
                                     
                                     <div>
-                                    <label for="cont-l-name">*Last Name</label>
-                                    <input type="text" id="cont-l-name" required aria-required="true">
+                                    <label for="appo-l-name">*Last Name</label>
+                                    <input type="text" id="appo-l-name" required aria-required="true">
                                     </div>
                                     
                                     <div>
-                                    <label for="cont-email">*Email</label>
-                                    <input type="text" id="cont-email" required aria-required="true">
+                                    <label for="appo-email">*Email</label>
+                                    <input type="text" id="appo-email" required aria-required="true">
                                     </div>
                                     
                                     <div>
-                                    <label for="cont-phone">Phone</label>
-                                    <input type="text" id="cont-phone">
+                                    <label for="appo-phone">*Phone</label>
+                                    <input type="text" id="appo-phone" required aria-required="true">
                                     </div>
 
                                 </div>
                             </fieldset>
 
                             <fieldset>
-                                <legend>Your Question or Message</legend>
+                                <legend>Pet Information</legend>
 
-                                <label for="cont-message">Message</label>
-                                <textarea name="cont-message" id="cont-message" rows="6"></textarea>
+                                <div class="form-one-two">
+                                    <div>
+                                        <label for="appo-name">*Pet Name</label>
+                                        <input type="text" id="appo-name" required aria-required="true">
+                                    </div>
+
+                                    <div>
+                                    <label for="appo-species">*Species</label>
+                                    <select name="appo-species" id="appo-species" required aria-required="true">
+                                        <option value=""></option>
+                                        <option value="canine">Dog</option>
+                                        <option value="feline">Cat</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    </div>
+                                    
+                                    <div>
+                                    <label for="appo-breed">Breed</label>
+                                    <input type="text" id="appo-breed">
+                                    </div>
+                                    
+                                    <div>
+                                    <label for="appo-age">*Age</label>
+                                    <input type="number" id="appo-age" required aria-required="true">
+                                    </div>
+
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Appointment Information</legend>
+
+                                <div class="form-one-two">
+
+                                    <div>
+                                        <label for="appo-service">*Service</label>
+                                        <select name="appo-service" id="appo-service" required aria-required="true">
+                                            <option value=""></option>
+                                            <option value="check">Medical Check</option>
+                                            <option value="vaccination">Vaccination</option>
+                                            <option value="surgery">Surgery</option>
+                                            <option value="grooming">Grooming</option>
+                                            <option value="daycare">Daycare</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        </div>
+
+                                </div>
 
                             </fieldset>
 
