@@ -220,6 +220,20 @@ section {
     color: var(--dark-blue);
 }
 
+.phone-block {
+    background: var(--black-a10);
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px 10px;
+    row-gap: 40px;
+}
+
+.phone-block p {
+    margin: auto;
+    text-align: center;
+}
+
 .home-links a {
     border-radius: 50%;
     display: block;
@@ -228,12 +242,13 @@ section {
 }
 
 .home-links button {
-    background: var(--black);
+    background: var(--white);
     border-radius: 50%;
     box-shadow: 0 0 0 10px var(--black-a10);
+    color: var(--darker-blue);
     font-weight: 600;
     height: 180px;
-    margin-bottom: 20px;
+    margin: 20px;
     padding: 10px;
     width: 180px;
 }
@@ -241,6 +256,7 @@ section {
 .home-links button:hover {
     background: var(--darker-blue);
     box-shadow: 0 0 0 4px var(--white);
+    color: var(--light-blue);
 }
 
 .two-p-two-btn {
@@ -252,17 +268,18 @@ section {
 }
 
 button {
-    background: var(--dark-blue);
+    background: var(--black);
     border: none;
     color: var(--white);
     cursor: pointer;
     font-size: 1.2em;
+    font-weight: 600;
     padding: 20px 3px;
     width: 100%;
 }
 
 button:hover {
-    background: var(--mid-blue);
+    background: var(--darker-blue);
 }
 
 .intro-form-grid {
@@ -276,19 +293,26 @@ button:hover {
     row-gap: 40px;
 }
 
-.intro-form-grid .img-bg {
+ .img-bg {
     background: var(--gradient-transp-black-a10);
     height: fit-content;
     padding: 0 8px 20px 8px;
     width: 100%;
 }
 
-.intro-form-grid img {
+.img-bg img {
     display: block;
     height: auto;
     margin: 0 auto;
-    max-width: 350px;
+    max-width: 400px;
+    object-fit: cover;
     width: 100%;
+}
+
+.services-grid {
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .intro-form-grid h3 {
