@@ -221,6 +221,17 @@ section {
     row-gap: 50px;
 }
 
+.grid-cont {
+    display: grid;
+    gap: 30px;
+}
+
+.text-img-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .phone-block {
     background: var(--black-a10);
     column-gap: 20px;
@@ -251,6 +262,12 @@ section {
     display: block;
     text-decoration: none;
     width: 100%;
+}
+
+.one-two {
+    column-gap: 20px;
+    display: grid;
+    row-gap: 30px;
 }
 
 .one-two1900 {
@@ -382,12 +399,6 @@ legend {
     position: relative;
 }
 
-.one-two {
-    column-gap: 20px;
-    display: grid;
-    row-gap: 30px;
-}
-
 form .one-two {
     column-gap: 15px;
     row-gap: 0;
@@ -491,6 +502,12 @@ footer a {
     }
     nav ul a:hover {
         background: rgba(0,0,0,0.1);
+    }
+    .text-img-flex {
+        flex-direction: row;
+    }
+    .text-img-flex:nth-child(even) {
+        flex-direction: row-reverse;
     }
     .phone-block {
         grid-template-columns: 1fr 1fr;
