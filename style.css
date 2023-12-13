@@ -58,10 +58,6 @@ body {
 }
 /* ////////// ////////// */
 
-h1, h2 {
-    font-family: var(--font-alt-01);
-}
-
 /* ////////// Logos ////////// */
 .logo-cont-home, .logo-cont-small {
     align-items: center;
@@ -173,8 +169,10 @@ nav ul a:hover {
 /* ////////// ////////// */
 
 /* ////////// Shered ////////// */
-h1, h2 {
+
+h1 {
     border-bottom: 2px solid;
+    font-family: var(--font-alt-01);
     font-size: 2em;
     margin-bottom: 40px;
     text-align: center;
@@ -207,10 +205,6 @@ section {
     color: var(--white);
 }
 
-.blue-bg h1, blue-bg h2 {
-    color: var(--white);
-}
-
 .white-bg {
     background: var(--white);
     color: #404040;
@@ -220,25 +214,50 @@ section {
     color: var(--dark-blue);
 }
 
+.onefr-fourfronefr {
+    column-gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+}
+
 .phone-block {
     background: var(--black-a10);
     column-gap: 20px;
     display: grid;
     grid-template-columns: 1fr;
+    height: fit-content;
     padding: 20px 10px;
     row-gap: 40px;
 }
 
 .phone-block p {
+    font-weight: 600;
     margin: auto;
     text-align: center;
 }
 
+.phone-block button {
+    background: var(--dark-blue);
+}
+
+.phone-block button:hover {
+    background: var(--black);
+}
+
 .home-links a {
     border-radius: 50%;
+    color: var(--white);
     display: block;
-    margin: 0 auto;
-    width: fit-content;
+    margin: auto;
+    text-decoration: none;
+    width: 100%;
+}
+
+.one-two1900 {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
 }
 
 .home-links button {
@@ -248,7 +267,7 @@ section {
     color: var(--darker-blue);
     font-weight: 600;
     height: 180px;
-    margin: 20px;
+    margin: 20px auto;
     padding: 10px;
     width: 180px;
 }
@@ -257,6 +276,10 @@ section {
     background: var(--darker-blue);
     box-shadow: 0 0 0 4px var(--white);
     color: var(--light-blue);
+}
+
+.home-links p {
+    margin: auto;
 }
 
 .two-p-two-btn {
@@ -312,7 +335,17 @@ button:hover {
 .services-grid {
     column-gap: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+}
+
+.services-grid > div > div:nth-child(2) {
+    background: var(--black-a10);
+    padding: 0 15px 15px 15px;
+}
+
+.services-grid h2 {
+    margin-bottom: 20px;
 }
 
 .intro-form-grid h3 {
@@ -350,7 +383,7 @@ legend {
     position: relative;
 }
 
-.form-one-two {
+.one-two {
     column-gap: 15px;
     display: grid;
 }
@@ -454,6 +487,12 @@ footer a {
     nav ul a:hover {
         background: rgba(0,0,0,0.1);
     }
+    .phone-block {
+        grid-template-columns: 1fr 1fr;
+    }
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
     .two-p-two-btn {
         grid-template-columns: 1fr 1fr;
     }
@@ -469,7 +508,7 @@ footer a {
         max-width: 100%;
         object-fit: cover;
     }
-    .form-one-two {
+    .one-two {
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -486,6 +525,9 @@ footer a {
     body {
         font-size: 1.05em;
     }
+    .services-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 /* ////////// 1900px ////////// */
@@ -495,6 +537,17 @@ footer a {
     }
     .width-cont {
         max-width: 1200px;
+    }
+    .onefr-fourfronefr {
+        grid-template-columns: 4fr 1fr;
+    }
+    .phone-block {
+        grid-template-columns: 1fr;
+        position: sticky;
+        top: 20px;
+    }
+    .one-two1900 {
+        grid-template-columns: 1fr 1fr;
     }
     .intro-form-grid {
         gap: 25px;
