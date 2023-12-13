@@ -249,7 +249,6 @@ section {
     border-radius: 50%;
     color: var(--white);
     display: block;
-    margin: auto;
     text-decoration: none;
     width: 100%;
 }
@@ -279,7 +278,7 @@ section {
 }
 
 .home-links p {
-    margin: auto;
+    margin: 0 auto;
 }
 
 .two-p-two-btn {
@@ -384,8 +383,14 @@ legend {
 }
 
 .one-two {
-    column-gap: 15px;
+    column-gap: 20px;
     display: grid;
+    row-gap: 30px;
+}
+
+form .one-two {
+    column-gap: 15px;
+    row-gap: 0;
 }
 
 label {
@@ -548,6 +553,9 @@ footer a {
     }
     .one-two1900 {
         grid-template-columns: 1fr 1fr;
+    }
+    .home-links p {
+        margin: auto auto auto -20px;
     }
     .intro-form-grid {
         gap: 25px;
