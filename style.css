@@ -293,6 +293,7 @@ section {
     width: 180px;
 }
 
+.home-links a:hover button,
 .home-links button:hover {
     background: var(--black);
     box-shadow: 0 0 0 4px var(--white);
