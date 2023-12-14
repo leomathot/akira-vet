@@ -372,7 +372,7 @@ button:hover {
 }
 
 .services-grid > div {
-    background: var(--black-a10);
+    background: var(--gradient-transp-black-a10);
 }
 
 .services-grid .img-bg {
@@ -537,6 +537,13 @@ footer a {
     .text-img-flex-rev {
         flex-direction: row-reverse;
     }
+    .img-bg {
+        background: var(--black-a10);
+        padding: 10px 15px 30px 15px;
+    }
+    .img-bg img {
+        max-width: 100%;
+    }
     .phone-block {
         grid-template-columns: 1fr 1fr;
         padding: 10px;
@@ -544,15 +551,11 @@ footer a {
     .services-grid {
         grid-template-columns: 1fr 1fr;
     }
+    .services-grid > div {
+        background: var(--black-a10);
+    }
     .intro-form-grid > div:first-of-type {
         grid-template-columns: 2fr 3fr;
-    }
-    .img-bg {
-        background: var(--black-a10);
-        padding: 10px 15px 30px 15px;
-    }
-    .img-bg img {
-        max-width: 100%;
     }
     .one-two {
         grid-template-columns: 1fr 1fr;
