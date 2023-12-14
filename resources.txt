@@ -1,5 +1,30 @@
-Home Header Photo:
-Yuriy Bogdanov - Unsplash
-Yuriy Bogdanov https://unsplash.com/@profepix?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash
-Unsplash https://unsplash.com/photos/german-shepherd-standing-on-mountain-tBY61CbBJg8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash
+Prompts given to ChatGPT for content:
+
+I am creating a mock website for a veterinary clinic whose name is Akira Vet. It has 4 pages: Home, About Us, Our Services, and Contact Us.
+Write 2 paragraphs of about 70 words each for the home page.
+On the second page, About Us, there are 3 sections: Get to Know Us, which is an intro, Our Team, and Our Facilities. Write a paragraph for each, the first one of about 50 words, and the others of about 70. 
+For the third page, Our Services, write an intro of about 60 words, and a description of less than 20 words for each of the following services:
+Routine Checks, Vaccination, Surgery, Grooming, Pet Daycare, and Pet Store.
+On the home page, two icons allow you to navigate to other parts of the website: Our Services, and Book an Appointment. Write A description of no more than 20 words for each.
+
+
+Images
+
+Home header photo: Yuriy Bogdanov - Unsplash (https://unsplash.com/@profepix)
+Home hamster photo: Ricky Kharawala - Unsplash (https://unsplash.com/@sweetmangostudios)
+Home cat and dog photo: Andrew S - Unsplash (https://unsplash.com/@sita2)
+
+About cat photo: Werzk Luuuuuuu - Unsplash (https://unsplash.com/@berzk)
+About dog and vet photo: Karlo Tottoc - Unsplash (https://unsplash.com/@josekarlo01)
+About surgery room photo: Arseny Togulev - Unsplash (https://unsplash.com/@tetrakiss)
+
+Services rabbit photo: Paige Cody - Unsplash (https://unsplash.com/@paige_cody)
+Services cat photo: Parker Coffman - Unsplash (https://unsplash.com/@lowmurmer)
+Services dog lying photo: Markus Winkler - Unsplash (https://unsplash.com/@markuswinkler)
+Services dog being bathed photo: benjamin lehman - Unsplash (https://unsplash.com/@benjaminlehman)
+Services two dogs: own photo
+Services tow Guinea pigs: Bonnie Kittle - Unsplash (https://unsplash.com/@bonniekdesign)
+
+Contact photos: own photos
+
   
