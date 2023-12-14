@@ -154,6 +154,7 @@ nav li {
 }
 a {
 	text-decoration: none;
+    color: inherit;
 }
 nav a {
     background: #505050;
@@ -496,11 +497,35 @@ form button:hover {
 footer {
     background: #303030;
     color: #ddd;
-    padding: 50px 8%;
+    padding: 70px 0;
+}
+
+footer .one-two {
+    row-gap: 50px;
+}
+
+footer .one-two > div:nth-child(1) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer div:nth-child(2) {
+    justify-content: center;
+    display: flex;
+}
+
+footer div:nth-child(1) i {
+    margin-right: 15px;
 }
 
 footer a {
-    color: #ddd;
+    height: fit-content;
+    margin: 0 20px;
+}
+
+footer a:hover {
+    color: var(--light-blue);
 }
 
 /* ////////// Media queries ////////// */
