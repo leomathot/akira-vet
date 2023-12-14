@@ -361,8 +361,20 @@ button:hover {
     row-gap: 40px;
 }
 
-.services-grid > div > div:nth-child(2) {
+.services-grid > div {
     background: var(--black-a10);
+}
+
+.services-grid .img-bg {
+    background: transparent;
+}
+
+.services-grid img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.services-grid > div > div:nth-child(2) {
     padding: 0 15px 15px 15px;
 }
 
@@ -517,6 +529,7 @@ footer a {
     }
     .phone-block {
         grid-template-columns: 1fr 1fr;
+        padding: 10px;
     }
     .services-grid {
         grid-template-columns: 1fr 1fr;
@@ -547,6 +560,9 @@ footer a {
 @media screen and (min-width: 1400px) {
     body {
         font-size: 1.05em;
+    }
+    .width-cont {
+        max-width: 1000px;
     }
     .services-grid {
         grid-template-columns: 1fr 1fr 1fr;
