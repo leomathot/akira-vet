@@ -281,20 +281,23 @@ section {
     width: 100%;
 }
 
-.home-links button {
+.link-circle {
     background: var(--white);
     border-radius: 50%;
     box-shadow: 0 0 0 10px var(--black-a10);
     color: var(--darker-blue);
+    display: flex;
+    flex-direction: column;
     font-weight: 600;
     height: 180px;
+    justify-content: center;
     margin: 20px auto;
     padding: 10px;
+    text-align: center;
     width: 180px;
 }
 
-.home-links a:hover button,
-.home-links button:hover {
+.link-circle:hover {
     background: var(--black);
     box-shadow: 0 0 0 4px var(--white);
     color: var(--light-blue);
@@ -303,8 +306,7 @@ section {
 .home-links i {
     display: block;
     font-size: 1.5em;
-    position: relative;
-    top: -20px;
+    margin-bottom: 15px;
 }
 
 .home-links p {
