@@ -184,7 +184,7 @@ h2 {
 }
 
 p {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 p:last-of-type {
@@ -265,12 +265,8 @@ section {
     background: var(--black);
 }
 
-.home-links a {
-    border-radius: 50%;
-    color: var(--white);
-    display: block;
-    text-decoration: none;
-    width: 100%;
+.phone-block i {
+    margin-right: 15px;
 }
 
 .one-two {
@@ -282,6 +278,14 @@ section {
 .one-two1900 {
     display: grid;
     grid-template-columns: 1fr;
+    width: 100%;
+}
+
+.home-links a {
+    border-radius: 50%;
+    color: var(--white);
+    display: block;
+    text-decoration: none;
     width: 100%;
 }
 
@@ -298,9 +302,15 @@ section {
 }
 
 .home-links button:hover {
-    background: var(--darker-blue);
+    background: var(--black);
     box-shadow: 0 0 0 4px var(--white);
     color: var(--light-blue);
+}
+
+.home-links i {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 .home-links p {
