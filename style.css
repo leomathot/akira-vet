@@ -308,6 +308,7 @@ button:hover, .link-btn:hover {
     color: var(--darker-blue);
     display: flex;
     flex-direction: column;
+    font-size: 1.2em;
     font-weight: 600;
     height: 180px;
     justify-content: center;
@@ -515,13 +516,14 @@ footer div:nth-child(2) {
     display: flex;
 }
 
-footer div:nth-child(1) i {
+footer div div:nth-child(1) i {
     margin-right: 15px;
 }
 
 footer a {
     height: fit-content;
-    margin: 0 20px;
+    margin: 0 25px;
+    width: fit-content;
 }
 
 footer a:hover {
