@@ -374,6 +374,24 @@ button:hover, .link-btn:hover {
 .services-grid > div {
     background: var(--gradient-transp-black-a10);
     cursor: pointer;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+}
+
+.services-grid > div:hover {
+    background: linear-gradient(
+        transparent,
+        rgba(255,255,255,0.1) 20%,
+        var(--white) 60%
+    );
+}
+
+.services-grid > div:hover h2 {
+    color: var(--dark-blue);
+}
+.services-grid > div:hover p {
+    color: var(--black);
 }
 
 .services-grid .img-bg {
@@ -559,6 +577,9 @@ footer a {
     }
     .services-grid > div {
         background: var(--black-a10);
+    }
+    .services-grid > div:hover {
+        background: var(--white);
     }
     .intro-form-grid > div:first-of-type {
         grid-template-columns: 2fr 3fr;
