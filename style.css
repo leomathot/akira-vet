@@ -305,6 +305,8 @@ section {
 
 .home-links p {
     margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
 }
 
 .contact-intro .one-two {
@@ -572,6 +574,7 @@ footer a {
     }
     .home-links p {
         margin: auto auto auto -20px;
+        text-align: left;
     }
     .intro-form-grid {
         gap: 25px;
