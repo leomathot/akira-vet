@@ -196,7 +196,7 @@ b {
     font-weight: 600;
 }
 
-section {
+section, .section-like {
     padding: 70px 0;
 }
 
