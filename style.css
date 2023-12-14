@@ -54,7 +54,7 @@ body {
     background: none;
 }
 .sec-header nav:hover #burger {
-	background: rgba(0,0,0,0.1);
+	background: var(--black-a10);
 }
 /* ////////// ////////// */
 
@@ -136,12 +136,12 @@ nav a {
 	text-decoration: none;
 }
 #burger {
-	background: rgba(0,0,0,0.1);
+	background: var(--black-a10);
     font-size: 1.5em;
     padding: 1px 6px;
 }
 nav ul {
-	background: rgba(0,0,0,0.1);
+	background: var(--black-a10);
 	display: none;
 	list-style-type: none;
 	position: absolute;
@@ -237,6 +237,10 @@ section {
     gap: 30px;
 }
 
+.text-img-flex > *, .text-img-flex-rev > * {
+    flex: 50%;
+}
+
 .phone-block {
     background: var(--black-a10);
     column-gap: 20px;
@@ -303,12 +307,8 @@ section {
     margin: 0 auto;
 }
 
-.two-p-two-btn {
-    column-gap: 30px;
-    display: grid;
-    grid-template-columns: 1fr;
+.contact-intro .one-two {
     margin-top: 40px;
-    row-gap: 30px;
 }
 
 button {
@@ -349,7 +349,6 @@ button:hover {
     height: auto;
     margin: 0 auto;
     max-width: 400px;
-    object-fit: cover;
     width: 100%;
 }
 
@@ -375,7 +374,7 @@ button:hover {
 
 /* ////////// Forms ////////// */
 #contact-form {
-    background: rgba(0,0,0,0.1);
+    background: var(--black-a10);
 }
 
 #appointment-form {
@@ -506,7 +505,7 @@ footer a {
 		display: inline-block;
     }
     nav ul a:hover {
-        background: rgba(0,0,0,0.1);
+        background: var(--black-a10);
     }
     .text-img-flex {
         flex-direction: row;
@@ -520,20 +519,15 @@ footer a {
     .services-grid {
         grid-template-columns: 1fr 1fr;
     }
-    .two-p-two-btn {
-        grid-template-columns: 1fr 1fr;
-    }
     .intro-form-grid > div:first-of-type {
         grid-template-columns: 2fr 3fr;
     }
-    .intro-form-grid .img-bg {
+    .img-bg {
         background: var(--black-a10);
         padding: 10px 15px 30px 15px;
     }
-    .intro-form-grid .img-bg img {
-        margin: 0;
+    .img-bg img {
         max-width: 100%;
-        object-fit: cover;
     }
     .one-two {
         grid-template-columns: 1fr 1fr;
