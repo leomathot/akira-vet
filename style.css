@@ -289,6 +289,7 @@ button:hover, .link-btn:hover {
 
 .one-two1900 {
     display: grid;
+    gap: 15px;
     grid-template-columns: 1fr;
     width: 100%;
 }
@@ -312,7 +313,7 @@ button:hover, .link-btn:hover {
     font-weight: 600;
     height: 180px;
     justify-content: center;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 10px;
     text-align: center;
     width: 180px;
@@ -631,6 +632,10 @@ footer a:hover {
     .width-cont {
         max-width: 1000px;
     }
+    .link-circle {
+        height: 210px;
+        width: 210px;
+    }
     .services-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -653,10 +658,11 @@ footer a:hover {
         top: 20px;
     }
     .one-two1900 {
+        gap: 0;
         grid-template-columns: 1fr 1fr;
     }
     .home-links p {
-        margin: auto auto auto -20px;
+        margin: auto auto auto -15px;
         text-align: left;
     }
     .intro-form-grid {
