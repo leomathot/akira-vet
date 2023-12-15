@@ -58,7 +58,7 @@ body {
 }
 /* ////////// ////////// */
 
-/* ////////// Logos ////////// */
+/* ////////// Logos common ////////// */
 .logo-cont-home, .logo-cont-small {
     align-items: center;
     border-radius: 50%;
@@ -169,7 +169,8 @@ nav ul a:hover {
 }
 /* ////////// ////////// */
 
-/* ////////// Shered ////////// */
+
+/* ////////// Common ////////// */
 
 h1, h2 {
     border-bottom: 2px solid;
@@ -177,9 +178,11 @@ h1, h2 {
     margin-bottom: 40px;
     text-align: center;
 }
+
 h1 {
     font-size: 2.1em;
 }
+
 h2 {
     font-size: 1.9em;
 }
@@ -341,21 +344,6 @@ button:hover, .link-btn:hover {
     text-align: center;
 }
 
-.contact-intro .one-two {
-    margin-top: 40px;
-}
-
-.intro-form-grid {
-    display: grid;
-    gap: 40px;
-}
-
-.intro-form-grid > div:first-of-type {
-    column-gap: 20px;
-    display: grid;
-    row-gap: 40px;
-}
-
  .img-bg {
     background: var(--gradient-transp-black-a10);
     height: fit-content;
@@ -370,6 +358,8 @@ button:hover, .link-btn:hover {
     max-width: 400px;
     width: 100%;
 }
+
+/* ////////// Services page ////////// */
 
 .services-grid {
     column-gap: 20px;
@@ -397,6 +387,7 @@ button:hover, .link-btn:hover {
 .services-grid > div:hover h2 {
     color: var(--dark-blue);
 }
+
 .services-grid > div:hover p {
     color: var(--black);
 }
@@ -424,8 +415,25 @@ button:hover, .link-btn:hover {
     max-width: 400px;
 }
 
+/* ////////// Contact page ////////// */
+
 .intro-form-grid h3 {
     margin-bottom: 20px;
+}
+
+.contact-intro .one-two {
+    margin-top: 40px;
+}
+
+.intro-form-grid {
+    display: grid;
+    gap: 40px;
+}
+
+.intro-form-grid > div:first-of-type {
+    column-gap: 20px;
+    display: grid;
+    row-gap: 40px;
 }
 
 /* ////////// Forms ////////// */
@@ -498,8 +506,10 @@ form button {
 form button:hover {
     background: var(--darker-blue);
 }
+/* //////////  ////////// */
 
 /* ////////// Footer ////////// */
+
 footer {
     background: #303030;
     color: #ddd;
@@ -534,6 +544,7 @@ footer a {
 footer a:hover {
     color: var(--light-blue);
 }
+/* //////////  ////////// */
 
 /* ////////// Media queries ////////// */
 
