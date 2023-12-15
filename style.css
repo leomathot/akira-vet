@@ -325,15 +325,19 @@ button:hover, .link-btn:hover {
     color: var(--light-blue);
 }
 
-.home-links i {
+.link-circle i {
     display: block;
     font-size: 1.5em;
     margin-bottom: 15px;
 }
 
+.link-circle > div {
+   margin-bottom: 10px;
+}
+
 .home-links p {
     margin: 0 auto;
-    max-width: 300px;
+    max-width: 400px;
     text-align: center;
 }
 
